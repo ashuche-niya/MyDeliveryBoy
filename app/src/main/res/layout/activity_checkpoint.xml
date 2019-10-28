@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Checkpoint">
+
+
+    <TextView
+        android:id="@+id/checkAddr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:layout_margin="10dp"/>
+
+
+    <ListView
+        android:id="@+id/otherDeli"
+        android:layout_width="wrap_content"
+        android:layout_height="330dp"
+        android:layout_below="@+id/checkAddr" />
+
+    <LinearLayout
+        android:id="@+id/llpickedUpBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/otherDeli"
+        android:weightSum="2"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:id="@+id/quesBtnPick"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1.4"
+            android:text="Picked Up?"/>
+
+        <ImageView
+            android:id="@+id/imgPick"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:src="@drawable/tick" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_below="@+id/llpickedUpBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Go here"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"/>
+
+</RelativeLayout>

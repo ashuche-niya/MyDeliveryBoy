@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Delivery Boy</string>
+
+    <string-array name="array_deli">
+        <item>Gopal</item>
+        <item>Mahesh</item>
+        <item>Chandresh</item>
+    </string-array>
+</resources>
